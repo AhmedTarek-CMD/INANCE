@@ -1,0 +1,187 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --first-color: #d1e3ff;
+  --second-color: #ff8a1d;
+  --third-color: #0355cc;
+}
+body {
+  font-family: "Lato", sans-serif;
+}
+.landing {
+  background-color: var(--first-color);
+  height: 116vh;
+}
+.landing .navbar .navbar-brand h1 {
+  color: var(--third-color);
+}
+.landing .navbar ul li a.active {
+  color: var(--third-color);
+}
+.landing .navbar ul li a {
+  color: black;
+}
+.landing .navbar ul li a:hover {
+  color: var(--third-color);
+}
+.landing section .content h1 {
+  color: var(--third-color);
+}
+.landing section .content a {
+  text-decoration: none;
+  background-color: var(--second-color);
+  color: white;
+  padding: 0.75rem 3rem;
+  border-radius: 0.35rem;
+}
+.landing section .content a:hover {
+  background-color: transparent;
+  color: var(--second-color);
+  border: 1px solid var(--second-color);
+}
+@media (min-width: 992px) {
+  .about .row .box {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 3rem 2rem;
+    position: relative;
+    top: -120px;
+    background-color: white;
+    transition: 0.3s;
+  }
+}
+@media (max-width: 991px) {
+  .about .row .box {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 3rem 2rem;
+    position: relative;
+    background-color: white;
+    transition: 0.3s;
+    margin-top: 2rem;
+  }
+  .landing {
+    height: 80vh;
+  }
+}
+.about .row .box.active {
+  background-color: var(--second-color);
+  color: white;
+}
+.about .row .box:hover {
+  background-color: var(--second-color);
+  color: white;
+}
+.about .row .box svg {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+.about .about-box .text a {
+  text-decoration: none;
+  background-color: var(--third-color);
+  color: white;
+  padding: 0.75rem 3rem;
+}
+.about .about-box .text a:hover {
+  background-color: transparent;
+  border: 1px solid var(--third-color);
+  color: var(--third-color);
+}
+.prof {
+  background-color: var(--first-color);
+}
+.prof section .content a {
+  text-decoration: none;
+  background-color: var(--second-color);
+  color: white;
+  padding: 0.75rem 3rem;
+}
+.prof section .content a:hover {
+  background-color: transparent;
+  color: var(--second-color);
+  border: 1px solid var(--second-color);
+}
+.services .col-12 .box {
+  background-color: white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  transition: 0.3s;
+}
+.services .col-12 .box:hover {
+  background-color: var(--second-color);
+  color: white;
+}
+.services a {
+  text-decoration: none;
+  background-color: var(--third-color);
+  color: white;
+  padding: 0.75rem 3rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.services a:hover {
+  background-color: transparent;
+  border: 1px solid var(--third-color);
+  color: var(--third-color);
+}
+.contact .box input,
+textarea {
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+.contact a {
+  text-decoration: none;
+  background-color: var(--third-color);
+  color: white;
+  padding: 0.75rem 3rem;
+}
+.contact a:hover {
+  background-color: transparent;
+  border: 1px solid var(--third-color);
+  color: var(--third-color);
+}
+.contact .map iframe {
+  width: 100%;
+  height: 281px;
+  margin-bottom: 3rem;
+}
+.footer {
+  background-color: #0a0f43;
+}
+.footer .content {
+  position: relative;
+}
+@media (min-width: 992px) {
+  .footer .content::before {
+    content: "";
+    position: absolute;
+    width: 51%;
+    height: 1px;
+    top: 31px;
+    left: 24%;
+    background-color: white;
+    z-index: 1;
+  }
+}
+.footer .content svg {
+  background-color: var(--third-color);
+  font-size: 1.5rem;
+  padding: 1.25rem;
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+  position: relative;
+  z-index: 2;
+}
+.footer .content svg:hover {
+  background-color: var(--second-color);
+}
+.footer .links svg {
+  color: white;
+  font-size: 1.5rem;
+  padding: 1.5rem;
+}
+.footer .links svg:hover {
+  color: var(--second-color);
+}
